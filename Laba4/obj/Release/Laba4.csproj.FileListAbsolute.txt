@@ -1,0 +1,9 @@
+D:\_Учёба\Технология программирования Лиза\4\Laba4\bin\Release\Laba4.exe.config
+D:\_Учёба\Технология программирования Лиза\4\Laba4\bin\Release\Laba4.exe
+D:\_Учёба\Технология программирования Лиза\4\Laba4\bin\Release\Laba4.pdb
+D:\_Учёба\Технология программирования Лиза\4\Laba4\obj\Release\Laba4.csprojAssemblyReference.cache
+D:\_Учёба\Технология программирования Лиза\4\Laba4\obj\Release\Laba4.Form1.resources
+D:\_Учёба\Технология программирования Лиза\4\Laba4\obj\Release\Laba4.Properties.Resources.resources
+D:\_Учёба\Технология программирования Лиза\4\Laba4\obj\Release\Laba4.csproj.GenerateResource.cache
+D:\_Учёба\Технология программирования Лиза\4\Laba4\obj\Release\Laba4.exe
+D:\_Учёба\Технология программирования Лиза\4\Laba4\obj\Release\Laba4.pdb
