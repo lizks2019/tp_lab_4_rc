@@ -98,9 +98,15 @@ namespace Laba4
         private void button2_Click(object sender, EventArgs e)
 
        {
+            try
+            {
+                dataGridView1.Refresh();
+                dataGridView1.Rows.Clear();
+            }
+            catch ( Exception )
+            {
 
-            dataGridView1.Refresh();
-            dataGridView1.Rows.Clear();
+            }
 
         }
 
@@ -153,25 +159,19 @@ namespace Laba4
                         str = s[i].Split(';');
                         for (int j = 0; j < dataGridView1.ColumnCount; j++)
                         {
-                            try
-                            {
                                 Double.Parse(str[j]);
-                            }
-                            catch (Exception)
-                            {
-                                dataGridView1.Rows[i].ErrorText = " Некорректное значение ";
-                            }
-                            for (int k = 0; k < str[j].Length; ++k)
-                            {
-                                foreach ( char stroka in mass )
+                                for (int k = 0; k < str[j].Length; ++k)
                                 {
-                                    if ( str[j][k] == stroka )
+                                    foreach (char stroka in mass)
                                     {
-                                        dataGridView1[j, i].Value = str[j];
-                                        break;
+                                        if (str[j][k] == stroka)
+                                        {
+                                            dataGridView1[j, i].Value = str[j];
+                                            break;
+                                        }
                                     }
                                 }
-                            }
+                            
                         }
                         dataGridView1.Rows[i].HeaderCell.Value = (i + 1).ToString();
                     }
@@ -184,7 +184,7 @@ namespace Laba4
             }
             catch (Exception)
             {
-                MessageBox.Show("Произошла непредвиденная ошибка, проверьте правильность файла!");
+                MessageBox.Show("Произошла ошибка, проверьте правильность файла!");
             }
         }
 
